@@ -28,12 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            btnPulsar = new Button();
+            txtNombre = new TextBox();
+            label1 = new Label();
+            SuspendLayout();
+            // 
+            // btnPulsar
+            // 
+            btnPulsar.Location = new Point(314, 142);
+            btnPulsar.Name = "btnPulsar";
+            btnPulsar.Size = new Size(179, 42);
+            btnPulsar.TabIndex = 0;
+            btnPulsar.Text = "Pulsar";
+            btnPulsar.UseVisualStyleBackColor = true;
+            btnPulsar.Click += btnPulsar_Click;
+            // 
+            // txtNombre
+            // 
+            txtNombre.Location = new Point(314, 113);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(179, 23);
+            txtNombre.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(314, 95);
+            label1.Name = "label1";
+            label1.Size = new Size(123, 15);
+            label1.TabIndex = 2;
+            label1.Text = "Introduzca su nombre";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Lime;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
+            Controls.Add(txtNombre);
+            Controls.Add(btnPulsar);
+            Name = "Form1";
             Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button btnPulsar;
+        private TextBox txtNombre;
+        private Label label1;
     }
 }
