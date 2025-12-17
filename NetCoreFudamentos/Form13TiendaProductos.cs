@@ -16,11 +16,6 @@ namespace NetCoreFudamentos
             this.lstTienda.SelectionMode = SelectionMode.MultiExtended;
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             string producto = this.txtProducto.Text;
@@ -110,7 +105,7 @@ namespace NetCoreFudamentos
         }
 
         private void btnBajar_Click(object sender, EventArgs e)
-        {
+         {
             //Obtener el índice actual y el total de elementos
             int indiceActual = this.lstAlmacen.SelectedIndex;
 

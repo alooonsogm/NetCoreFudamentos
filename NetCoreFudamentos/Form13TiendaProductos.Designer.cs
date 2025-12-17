@@ -60,7 +60,6 @@
             label2.Size = new Size(43, 15);
             label2.TabIndex = 1;
             label2.Text = "Tienda";
-            label2.Click += label2_Click;
             // 
             // label3
             // 
